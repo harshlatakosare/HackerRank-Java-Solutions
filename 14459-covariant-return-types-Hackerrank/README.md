@@ -1,0 +1,21 @@
+# [Covariant Return Types](https://www.hackerrank.com/challenges/java-covariance/problem?isFullScreen=true)
+## Easy
+<div class="challenge-body-html"><div class="challenge_problem_statement"><div class="msB challenge_problem_statement_body"><div class="hackdown-content"><svg style="display: none;"><defs id="MathJax_SVG_glyphs"></defs></svg><p>Java allows for <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/returnvalue.html">Covariant Return Types</a>, which means you can vary your return type as long you are returning a subclass of your specified return type.   </p>
+
+<p><a href="https://docs.oracle.com/javase/tutorial/java/IandI/override.html">Method Overriding</a> allows a subclass to <em>override</em> the behavior of an existing superclass method and specify a return type that is some subclass of the original return type. It is best practice to use the <code>@Override</code> <a href="https://docs.oracle.com/javase/tutorial/java/annotations/basics.html">annotation</a> when overriding a superclass method.</p>
+
+<p>Implement the classes and methods detailed in the diagram below:</p>
+
+<p><img src="https://s3.amazonaws.com/hr-assets/0/1523891844-c66f1555af-class.png" alt="image" title=""></p>
+
+<p>You will be given a partially completed code in the editor where the <em>main</em> method takes the name of a state (i.e., <code>WestBengal</code>, or <code>AndhraPradesh</code>) and prints the national flower of that state using the classes and methods written by you. </p>
+
+<p><strong>Note:</strong>  <em>Do not</em> use access modifiers in your class declarations.</p>
+
+<p><strong>Resources</strong> <br>
+<a href="http://c2.com/cgi/wiki?CovariantReturnTypes">Covariant Return Type</a> <br>
+<a href="https://blogs.oracle.com/sundararajan/entry/covariant_return_types_in_java">Java Covariant Type</a></p></div></div></div><div class="challenge_input_format"><div class="msB challenge_input_format_title"><p><strong>Input Format</strong></p></div><div class="msB challenge_input_format_body"><div class="hackdown-content"><svg style="display: none;"><defs id="MathJax_SVG_glyphs"></defs></svg><p>The locked code reads a single string denoting the name of a subclass of <em>State</em> (i.e., <code>WestBengal</code>, <code>Karnataka</code>, or <code>AndhraPradesh</code>), then tests the methods associated with that subclass. You are not responsible for reading any input from stdin.</p></div></div></div><div class="challenge_output_format"><div class="msB challenge_output_format_title"><p><strong>Output Format</strong></p></div><div class="msB challenge_output_format_body"><div class="hackdown-content"><svg style="display: none;"><defs id="MathJax_SVG_glyphs"></defs></svg><p>Output is handled for you by the locked code, which creates the object corresponding to the input string's class name and then prints the name returned by that class' national flower's <em>whatsYourName</em> method. You are not responsible for printing anything to stdout.</p></div></div></div><div class="challenge_sample_input"><div class="msB challenge_sample_input_title"><p><strong>Sample Input 0</strong></p></div><div class="msB challenge_sample_input_body"><div class="hackdown-content"><svg style="display: none;"><defs id="MathJax_SVG_glyphs"></defs></svg><div class="highlight"><pre><span></span><span class="err">AndhraPradesh</span>
+</pre></div>
+</div></div></div><div class="challenge_sample_output"><div class="msB challenge_sample_output_title"><p><strong>Sample Output 0</strong></p></div><div class="msB challenge_sample_output_body"><div class="hackdown-content"><svg style="display: none;"><defs id="MathJax_SVG_glyphs"></defs></svg><div class="highlight"><pre><span></span><span class="err">Lily</span>
+</pre></div>
+</div></div></div><div class="challenge_explanation"><div class="msB challenge_explanation_title"><p><strong>Explanation 0</strong></p></div><div class="msB challenge_explanation_body"><div class="hackdown-content"><svg style="display: none;"><defs id="MathJax_SVG_glyphs"></defs></svg><p>An <em>AndhraPradesh</em> object's <em>yourNationalFlower</em> method returns an instance of the <em>Lily</em> class, and the <em>Lily</em> class' <em>whatsYourName</em> method returns <code>Lily</code>, which is printed by the hidden code checker.</p></div></div></div></div>
